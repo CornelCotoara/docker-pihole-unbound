@@ -1,7 +1,7 @@
 name: Docker
 
   env:
-    GITHUB_ACTION_PATH: one-container/pihole-unbound/
+    GITHUB_ACTION_REPOSITORY: one-container/pihole-unbound/
 
 # This workflow uses actions that are not certified by GitHub.
 # They are provided by a third-party and are governed by
