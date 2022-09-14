@@ -1,8 +1,5 @@
 name: Docker
 
-env:
-  GITHUB_WORKSPACE: github.com/CornelCotoara/docker-pihole-unbound/tree/main/one-container/pihole-unbound
-
 # This workflow uses actions that are not certified by GitHub.
 # They are provided by a third-party and are governed by
 # separate terms of service, privacy policy, and support
