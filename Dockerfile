@@ -1,6 +1,6 @@
 #On demand build comm
 FROM pihole/pihole:latest
-RUN apt update && apt install -y unbound
+RUN apt update && apt install -y unbound wget
 
 COPY one-container/pihole-unbound/lighttpd-external.conf /etc/lighttpd/external.conf 
 COPY one-container/pihole-unbound/unbound-pihole.conf /etc/unbound/unbound.conf.d/pi-hole.conf
