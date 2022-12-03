@@ -7,5 +7,5 @@ COPY one-container/pihole-unbound/unbound-pihole.conf /etc/unbound/unbound.conf.
 COPY one-container/pihole-unbound/99-edns.conf /etc/dnsmasq.d/99-edns.conf
 RUN mkdir -p /etc/services.d/unbound
 COPY one-container/pihole-unbound/unbound-run /etc/services.d/unbound/run
-
+RUN wget https://www.internic.net/domain/named.root -qO- | sudo tee /var/lib/unbound/root.hints
 ENTRYPOINT ./s6-init
