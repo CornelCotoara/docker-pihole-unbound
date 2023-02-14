@@ -1,4 +1,3 @@
-#On demand build comm
 FROM pihole/pihole:latest
 RUN apt update && apt install -y unbound wget
 
